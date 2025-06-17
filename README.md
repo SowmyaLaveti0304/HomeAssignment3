@@ -46,12 +46,12 @@ Lemmatization uses a vocabulary and POS info to return a valid dictionary form.
 Useful when… you want to reduce noise and dimensionality in tasks focused on “what” rather than how. Harmful when… function words carry meaning or structure, e.g. sentiment analysis.
 ## Q3: Named Entity Recognition with SpaCy 
 ### Tasks completed
-- Entity text, Entity label, start and end character positions
+- Entity text, Entity label, start and end character positions.
 string used: "Barack Obama served as the 44th President of the United States and won the Nobel Peace Prize in 2009."
-**How does NER differ from POS tagging in NLP?**
+ **How does NER differ from POS tagging in NLP?**
 - POS Tagging assigns every word a grammatical category to analyze sentence structure.
 - NER detects and classifies multi-word spans as real-world entities focusing on semantic information rather than syntax.
-**Describe two applications that use NER in the real world (e.g., financial news, search engines).**
+ **Describe two applications that use NER in the real world (e.g., financial news, search engines).**
 - Financial News Analysis: Automatically extracts entities like company names, stock symbols, dates, and monetary amounts from news articles to feed trading algorithms and generate market alerts.
 - Search Engines & Voice Assistants: Identifies locations, dates and organizations in user queries to map intent—e.g., finding flights, weather forecasts, or booking appointments.
 
