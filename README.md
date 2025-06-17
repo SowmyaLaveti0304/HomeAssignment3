@@ -20,8 +20,6 @@ This assignment covers various key topics in NLP and deep learning including:
 - Text is converted into a sequence of characters
 - RNN model is defined using LSTM layers
 - Model is trained with 10 EPOCHS
-### Output:
-
 **Explain the role of temperature scaling in text generation and its effect on randomness.**
 - Lower T<1 makes the distribution “peaky,” so the highest‐scoring characters dominate and output is more deterministic.
 - Higher T>1 flattens the distribution, giving lower‐scoring characters a bigger chance and producing more random, creative (but potentially incoherent) text.
@@ -31,7 +29,6 @@ This assignment covers various key topics in NLP and deep learning including:
 - Tokenized input sentence
 - Removed common English stopwords using NLTK
 - Applied stemming using Porter Stemmer
-### Output
 - What is the difference between stemming and lemmatization? Provide examples with the word “running.”
   Stemming is a crude, rule-based chop of word endings.
   ```plaintext
@@ -46,3 +43,15 @@ Lemmatization uses a vocabulary and POS info to return a valid dictionary form.
   lemm.lemmatize("running", pos="n")
 ```
 - Why might removing stop words be useful in some NLP tasks, and when might it actually be harmful?
+Useful when… you want to reduce noise and dimensionality in tasks focused on “what” rather than how. Harmful when… function words carry meaning or structure, e.g. sentiment analysis.
+## Q3: Named Entity Recognition with SpaCy 
+### Tasks completed
+- Entity text, Entity label, start and end character positions
+string used: "Barack Obama served as the 44th President of the United States and won the Nobel Peace Prize in 2009."
+**How does NER differ from POS tagging in NLP?**
+- POS Tagging assigns every word a grammatical category to analyze sentence structure.
+- NER detects and classifies multi-word spans as real-world entities focusing on semantic information rather than syntax.
+**Describe two applications that use NER in the real world (e.g., financial news, search engines).**
+- Financial News Analysis: Automatically extracts entities like company names, stock symbols, dates, and monetary amounts from news articles to feed trading algorithms and generate market alerts.
+- Search Engines & Voice Assistants: Identifies locations, dates and organizations in user queries to map intent—e.g., finding flights, weather forecasts, or booking appointments.
+
