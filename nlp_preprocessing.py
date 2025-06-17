@@ -5,9 +5,6 @@ from nltk.tokenize import wordpunct_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-# Only stopwords require a download; run once if you haven't already:
-# >>> import nltk
-# >>> nltk.download('stopwords')
 
 def nlp_preprocess(text: str):
     # 1. Tokenize using wordpunct (splits on punctuation)
