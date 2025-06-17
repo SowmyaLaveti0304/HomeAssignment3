@@ -1,6 +1,3 @@
-# First, install the library (run in your shell):
-# pip install transformers
-
 from transformers import pipeline
 
 def analyze_sentiment(text: str):
